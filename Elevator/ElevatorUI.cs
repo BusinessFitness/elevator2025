@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace Elevator;
+﻿namespace Elevator;
 
 /// <summary>
 /// This class should orchestrate and coordinate the objects you create, and not have any material domain logic inside of it
