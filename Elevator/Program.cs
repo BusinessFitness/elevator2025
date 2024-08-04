@@ -3,19 +3,16 @@
 var ui = new ElevatorUI();
 
 ui.GetCurrentFloor();
-ui.RequestToGoDown(2);
-ui.RequestToGoToFloor(1);
+ui.RequestToGoUp(2);
+ui.RequestToGoToFloor(3);
 ui.RequestToGoDown(3);
-ui.ExecuteCycle();
 
 RunElevatorCycles(ui);
+return;
 
-void RunElevatorCycles(ElevatorUI elevatorUi)
+static void RunElevatorCycles(ElevatorUI elevatorUi)
 {
-    //Simple way to test elevator functionality
     const int numberOfCycles = 10;
     for (var i = 0; i < numberOfCycles; i++)
-    {
         elevatorUi.ExecuteCycle();
-    }
 }
